@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two Brother's</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="book-closed">
+  <h1>Two Brother's</h1>
+  <img src="https://i.imgur.com/SOxiLnD.png" alt="Autor" class="author-img">
+  <p class="author-name">By: LockBot</p>
+  <button onclick="openBook()">Entrar al Libro</button>
+</div>
+
+<div id="book-opened" style="display: none;">
+  <header>
+    <button id="menu-btn" onclick="toggleIndex()">Índice</button>
+  </header>
+
+  <div id="index" style="display: none;">
+    <h2>Índice</h2>
+    <ul>
+      <li><a href="#" onclick="goToChapter(1)">Saga I - Capítulo 1</a></li>
+      <li><a href="#" onclick="goToChapter(2)">Saga I - Capítulo 2</a></li>
+      <li><a href="#" onclick="goToChapter(3)">Saga I - Capítulo 3</a></li>
+    </ul>
+  </div>
+
+  <main id="content">
+    <h2 id="chapter-title">Capítulo 1</h2>
+    <p id="chapter-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+    </p>
+  </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+body {
+  font-family: 'Georgia', cursive;
+  margin: 0;
+  padding: 0;
+  background: #f8f1e7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#book-closed {
+  text-align: center;
+  animation: fadeIn 2s;
+}
+
+#book-closed h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.author-img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.author-name {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#book-opened {
+  text-align: center;
+  animation: openBook 2s forwards;
+}
+
+#menu-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #d4af37;
+}
+
+#index {
+  background: #fff8dc;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+#index ul {
+  list-style: none;
+  padding: 0;
+}
+
+#index li {
+  margin: 10px 0;
+}
+
+#index a {
+  text-decoration: none;
+  color: #333;
+}
+
+#content {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes openBook {
+  from { transform: rotateY(90deg); opacity: 0; }
+  to { transform: rotateY(0deg); opacity: 1; }
+}
