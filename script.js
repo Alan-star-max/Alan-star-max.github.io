@@ -1,4 +1,3 @@
-
 function openBook() {
   document.getElementById('book-closed').style.display = 'none';
   document.getElementById('book-opened').style.display = 'block';
