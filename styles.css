@@ -2,7 +2,7 @@ body {
   font-family: 'Georgia', cursive;
   margin: 0;
   padding: 0;
-  background: url('https://imgur.com/a/66NNnpw') no-repeat center center fixed;
+  background: url('https://i.imgur.com/dQ6XKNA.png') no-repeat center center fixed;
   background-size: cover;
   color: #333;
   display: flex;
@@ -22,7 +22,7 @@ body {
   width: 400px;
   max-width: 90%;
   margin-bottom: 20px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); /* SOMBRA agregada */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); /* Sombra elegante */
   border-radius: 12px; /* Esquinas suaves */
 }
 
